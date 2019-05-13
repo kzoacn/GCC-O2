@@ -51,7 +51,7 @@ inline int __lib_getInt() {
 }
 
 inline string* __lib_getString() {
-    char buf[1024];
+    static char buf[257];
     scanf("%s", buf);
     return new string(buf);
 }
